@@ -10,5 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "scripts": {
+    "dev": "./src nodemon server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
   }
 }
