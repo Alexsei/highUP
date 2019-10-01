@@ -1,10 +1,12 @@
 const express        = require('express');
 const app            = express();
+const passport       = require('passport');
+const session        = require('express-session');
+
 const PORT           = process.env.PORT || 8000;  // порт сервера
-
-
-app.listen(port, () => {
-  console.log('We are live on ' + port);
+const db             = require('./db');
+app.listen(PORT, () => {
+  console.log('We are live on ' + PORT);
 });
 app.get('/', (req, res) => {
   // Здесь будем создавать заметку.
