@@ -17,5 +17,5 @@ const db = (function() {
     })
 
   }
-}
+}());
 module.exports = db
