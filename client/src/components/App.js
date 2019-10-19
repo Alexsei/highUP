@@ -1,23 +1,12 @@
 import React, { Component } from "react";
 
-//import '../styles/App.css';
-
-class App extends Component {
-  constructor(props) {
-  super(props);
-  this.state = {
-      items: [],
-      cats: []
-    }
-  }
-  render() {
+export default class App extends Component {
+    render() {
         return (
-            <div className="list">
-            hello
+            <div>
+                Hello23 апп
             </div>
         );
-  }
-
+    }
 }
 
-export default App;

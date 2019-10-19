@@ -34,6 +34,8 @@
     "@material-ui/icons": "^4.4.3",
     "lodash": "^4.17.5",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "react-router": "^5.1.2",
+    "typeface-roboto": "0.0.75"
   }
 }
