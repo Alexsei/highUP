@@ -1,10 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
+
 import App from "./components/App.js";
 import Login from "./components/auth/login";
+import Welcome from "./components/welcome"
+
 import createBrowserHistory from "history/createBrowserHistory"
 const history = createBrowserHistory();
-import Rout from "./components/router";
+
 import {
     BrowserRouter as Router,
     Route, Link
@@ -21,7 +24,7 @@ ReactDOM.render(
 
             <hr/>
 
-            <Route exact path="/" component={App}/>
+            <Route exact path="/" component={Welcome}/>
             <Route path="/login"  component={Login}/>
             <Route path="/app"  component={App}/>
             
