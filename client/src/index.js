@@ -1,9 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+
+
 import App from "./components/App.js";
 import Login from "./components/auth/login";
 import Welcome from "./components/welcome"
+import RootMenu from "./components/rootmenu";
 
 import createBrowserHistory from "history/createBrowserHistory"
 const history = createBrowserHistory();
@@ -16,12 +19,7 @@ import {
 ReactDOM.render(
     <Router>
         <div>
-            <ul>
-                <li> <Link to='/'>Home</Link>  </li>
-                <li> <Link to='/login'>Login</Link>  </li>
-                <li> <Link to='/app'>App</Link>  </li>
-            </ul>
-
+            <RootMenu/>
             <hr/>
 
             <Route exact path="/" component={Welcome}/>
