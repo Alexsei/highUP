@@ -1,17 +1,27 @@
 import React, { Component } from "react";
-import  { Link }from 'react-router-dom'
+import './login.css';
+import { Button , InputGroup, FormControl, Form } from 'react-bootstrap';
 
-export default class App extends Component {
+export default class Login extends Component {
     render() {
         return (
-            <div>
-                <table>
-                    <tr><td>Авторизация</td></tr>
-                    <tr><td>Логин</td><td><input/></td></tr>
-                    <tr><td>Пароль</td><td><input type="password"/></td></tr>
-                    <tr><td></td><td> <input type="button" value="Войти"/></td></tr>
-                    <tr><td><Link to={"/login"}>Регистрация</Link></td></tr>
-                </table>
+            <div className="Login_div ">
+                <InputGroup className="mb-3 ">
+                    <InputGroup.Prepend>
+                        <InputGroup.Text className="InputGroup_text">Логин</InputGroup.Text>
+                    </InputGroup.Prepend>
+                    <FormControl  placeholder="Введите логин" />
+                </InputGroup >
+                <InputGroup className="mb-3 ">
+                    <InputGroup.Prepend>
+                        <InputGroup.Text className="InputGroup_text">Пароль</InputGroup.Text>
+                    </InputGroup.Prepend>
+                    <FormControl type="password" placeholder="Введите пароль" />
+                </InputGroup>
+                <div>
+                    <Button variant="success">Войти</Button>
+                    <Button href={"/auth/login"}>Регистрация</Button>
+                </div>
             </div>
         );
     }
